@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
+
+/* html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+} */
+/* .containers {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* body {
+    font-family: Arial, sans-serif;
+} */
+
+
+/* html {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+} */
+
+.containers {
+  /* max-width: 1200px; */
+  margin: -20px auto 0 auto;
+  width: 1200px;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+    /* position: fixed; */
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5rem;
+    background-color: #fff;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* z-index: 1000;  */
+    width: 100%;
+}
+
+.nav-links li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #054A68 0%, #52829C 100%);
+  border-radius: 5px;
+  left: 0;
+  bottom: -6px;
+  transform: scaleX(0);
+  transition: transform .5s;
+  transform-origin: right;
+}
+.nav-links li a:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.logo .text {
+  display: flex;
+  align-items: center;
+}
+
+.logo .text div.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo .text h2 {
+  font-size: 47px;
+  color: #225677;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.logoimg {
+  width: 138px;
+  height: 130px;
+  position: relative;
+  top: -8.43px;
+  mix-blend-mode: darken;
+}
+
+.after {
+  color: #8CACBA;
+  font-size: 16px;
+  line-height: 18.57px;
+  letter-spacing: -0.15px;
+  font-weight: 400;
+  font-family: "Inter Tight", sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-right: 20px;
+  position: relative;
+  right: 30px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: #225677;
+  font-weight: 700;
+
+}
+
+.button {
+  margin-left: 25px;
+  padding: 14px;
+  width: 110px;
+  position: relative;
+  right: 35px;
+  font-size: 12px;
+  transition: all 0.5s;
+  border: none;
+  background: linear-gradient(to right, #054A68 0%, #52829C 100%);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px 0; */
+  min-height: 100%;
+  margin-top: -70px;
+}
+
+.main-section .text-content {
+  max-width: 700px;
+}
+
+.main-section h1 {
+  color: #054561;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.main-section p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin-bottom: 20px;
+}
+
+.main-section button {
+  background:linear-gradient(to right, #054A68 0%, #52829C 100%);
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+button i {
+    margin-left: 0.2em; /* Adjust margin for icon spacing */
+}
+
+/* CSS for button hover effect */
+button {
+    background-color: white;
+    color: #054561;
+    border: 2px solid #054561;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: #054561;
+}
+
+/* // */
+.main-section .image-content {
+  max-width: 900px;
+}
+
+.main-section .image-content img {
+  width: 100%;
+  border-radius: 10px;
+  height: 536px;
+  margin-top: 150px;
+  /* padding-left: 130px; */
+}
+
+/* .services-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.services-section h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+} */
+
+
+/* SERVICE CARD LAYOUT */
+
+.service {
+  text-align: center;
+  font-size: 30px;
+  color: #033348;
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+
+.contain {
+  background: linear-gradient(180deg, #033348 0%, #054A68 100%);
+  height: max-content;
+  padding: 30px 0;
+}
+
+.container-service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background: linear-gradient(180deg, #054A68 0%, #52829C 100%);
+  border-radius: 20px;
+  padding: 41px, 39px, 41px, 39px;
+  width: 340px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border: 1px solid #666;
+}
+
+.card-inner {
+  width: 274px !important;
+  height: 393px !important;
+  gap: 26px;
+  opacity: 0px;
+  margin: auto;
+}
+
+
+.card h3 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 27.63px;
+  text-align: left;
+  width: 170px;
+  color: #fff;
+  height: 28px;
+  padding-top: 20px;
+  gap: 0px;
+  opacity: 0px;
+  padding-bottom: 20px;
+}
+
+.card p {
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Inter";
+  font-size: 15px;
+  line-height: 25.04px;
+  padding-top: 25px;
+  letter-spacing: 1.2px;
+  padding-bottom: 25px;
+  text-align: left;
+  color: #F6F8FA;
+}
+
+.wid {
+  width: 153px;
+  height: 153px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.widd {
+  width: 154px;
+  height: 154px;
+  position: relative;
+  right: 15px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+button {
+  border: none;
+}
+
+.read {
+  width: 266px;
+  height: 62px;
+  padding: 16px 60px 17px 60px;
+  gap: 10px;
+  border-radius: 5px;
+  opacity: 0px;
+  color: #fff;
+  font-family: "Nunito";
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28.8px;
+  text-align: center;
+  background: #033348;
+}
+
+.buttImg {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  left: 20px;
+  top: 2px;
+  gap: 0px;
+  opacity: 0px;
+  rotate: 90 deg;
+}
+
+
+
+/* ABOUT LAYOUT */
+
+.about {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about h2{
+  color: #033348;
+  font-weight: 700;
+  font-size: 210%;
+  margin-bottom: 30px;
+}
+
+.about-content {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.about-content p {
+     margin-bottom: 20px;  
+    /* padding-left: 20px;  */
+    font-size: 1.2rem; 
+    line-height: 1.8;  
+    text-align: justify;
+    color: #666;
+}
+
+
+/* FOOTER LAYOUT */
+
+.footer {
+  background: linear-gradient(to right, #043f59 100%, #4f86a4 0%);
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.footer div {
+  max-width: 300px;
+}
+
+.footer h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer p,
+.footer li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* .footer .contact,
+.footer .location,
+.footer .pages,
+.footer .features,
+.footer .follows {
+  flex: none;
+} */
+
+.footer .contact p,.footer .location p {
+  margin: 0 0 10px 0;
+}
+
+.footer .pages ul,.footer .features ul,.footer .follows ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .pages li,.footer .features li,.footer .follows li {
+  margin-bottom: 10px;
+}
+
+.footer .pages a,.footer .features a,.footer .follows a {
+  display: block;
+  color: #fff;
+}
+
+.footer .follows a i {
+  margin-right: 8px;
+}
+
+.copyright {
+  text-align: center;
+  /* padding-bottom: 20px; */
+  background: linear-gradient(to right, #043f59 100%, #4f86a4 0%);
+   color: #8CACBA;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38.07px;
+}
+
+.footer .contact {
+  text-align: left;
+  margin-top: 30px;
+  font-family: Plus Jakarta Sans;
+  line-height: 27.63px;
+  text-align: left;
+  border-right: 2px solid #8CACBA;;
+  padding-right: 3rem;
+}
+
+.footer .contact h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.footer .contact p {
+  margin: 22px 0;
+  background-color: white;
+  color: #054561;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 39.13px;
+  text-align: left;
+
+}
+
+.footer .contact a {
+  font-size: 14px;
+  color: #8CACBA;
+  text-decoration: none;
+}
+
+.footer .contact a:hover {
+  text-decoration: underline;
+}
+
+.footer .location {
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.footer .location h3 {
+  font-family: Plus Jakarta Sans;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 27.63px;
+  text-align: left;
+
+}
+
+.footer .location p {
+  font-size: 14px;
+  color: #8CACBA;
+  line-height: 1.9rem;
+}
+
+.pages h3,
+.features h3,
+.follows h3 {
+  font-family: Plus Jakarta Sans;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 27.63px;
+  text-align: left;
+}
+
+.pages li,
+.features li,
+.follows li {
+  margin-left: 2rem;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+.footer .pages h3,
+.footer .features h3,
+.footer .follows h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer .pages a,
+.footer .features a,
+.footer .follows a {
+  font-size: 14px;
+  font-weight: 200;
+  color: #8CACBA;
+  text-decoration: none;
+}
+
+.footer .pages a:hover,
+.footer .features a:hover,
+.footer .follows a:hover {
+  text-decoration: underline;
+}
+
+.footer .follows a i {
+  margin-right: 8px;
+}
+
+
+
+
